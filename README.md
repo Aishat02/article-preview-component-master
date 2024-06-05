@@ -16,6 +16,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## Overview
 
+![Desktop mode preview](design\desktop-active-state.jpg)
+
 ### The challenge
 
 Users should be able to:
@@ -35,11 +37,34 @@ Users should be able to:
 
 ### What I learned
 
-- How to use javascript to manipulate the CSS of an element
+- How to resize and position an image into a container using CSS
+
+```css
+.drawers {
+  border-radius: 10px 0 0 10px;
+  width: 285px;
+  height: 280px;
+  object-fit: cover;
+  object-position: 0% 100%;
+}
+```
+
+- How to use Javascript to manipulate the CSS of two elements using one function
 
 ```js
+let shareButton = document.querySelector(".share-container");
 function contactLinks() {
-  let show = (document.querySelector("#links").style.display = "flex");
+  shareButton.classList.toggle("active");
+  document.querySelector("main").classList.toggle("active");
+}
+```
+
+```css
+.share-container.active {
+  display: flex;
+}
+main.active {
+  height: 500px;
 }
 ```
 
@@ -51,4 +76,4 @@ function contactLinks() {
 
 - Github - [Aishat02](https://github.com/Aishat02)
 - Frontend Mentor - [Aris](https://www.frontendmentor.io/profile/Aishat02)
-- Twitter - [aishat_tijani](https://www.twitter.com/aishat__tijani)
+- Twitter - [aishat_tijani](https://www.x.com/aishat__tijani)

@@ -20,77 +20,74 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <div>
-      <main>
-        <img src="./images/drawers.jpg" alt="drawers" class="drawers" />
+    <main>
+      <img src="./images/drawers.jpg" alt="drawers" class="drawers" />
+      <div class="container">
+        <div class="space-container">
+          <header>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </header>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
 
-        <div class="container">
-          <div class="space-container">
-            <header>
-              Shift the overall look and feel by adding these wonderful touches
-              to furniture in your home
-            </header>
+          <div class="profile-container">
+            <div class="profile">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="female avatar"
+                class="avatar"
+              />
+              <div class="name">
+                Michelle Appleton<br />
+                <span class="date">28 Jun 2020</span>
+              </div>
 
-            <p>
-              Ever been in a room and felt like something was missing? Perhaps
-              it felt slightly bare and uninviting. I’ve got some simple tips to
-              help you make any room feel complete.
-            </p>
-
-            <div class="profile-container">
-              <div class="profile">
-                <img
-                  src="./images/avatar-michelle.jpg"
-                  alt="female avatar"
-                  class="avatar"
-                />
-                <div class="name">
-                  Michelle Appleton<br />
-                  <span class="date">28 Jun 2020</span>
-                </div>
-
-                <div>
-                  <div class="share-container" id="container">
-                    <div class="share-text">Share</div>
-                    <div class="share-images">
-                      <img
+              <div>
+                <div class="share-container" id="container">
+                  <div class="share-text">Share</div>
+                  <div class="share-images">
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><img
                         src="./images/icon-facebook.svg"
                         alt="Share on Facebook"
-                      />
-                      <img
-                        src="./images/icon-twitter.svg"
-                        alt="Share on Twitter"
-                      />
-                      <img
+                    /></a>
+                    <a href="https://www.x.com/" target="_blank"
+                      ><img src="./images/icon-twitter.svg" alt="Share on X"
+                    /></a>
+                    <a href="https://www.pinterest.com/" target="_blank"
+                      ><img
                         src="./images/icon-pinterest.svg"
                         alt="Share on Pinterest"
-                      />
-                    </div>
-                    <!--.share-images closing tag-->
+                    /></a>
                   </div>
-                  <!--.share-container closing tag-->
-                  <button>
-                    <img src="./images/icon-share.svg" alt="share" />
-                  </button>
+                  <!--.share-images closing tag-->
                 </div>
-                <!--.empty div closing tag-->
+                <!--.share-container closing tag-->
+                <button onclick="contactLinks()">
+                  <img src="./images/icon-share.svg" alt="share" />
+                </button>
               </div>
-              <!--.profile closing tag-->
+              <!--.empty div closing tag-->
             </div>
-            <!--.profile-container closing tag-->
+            <!--.profile closing tag-->
           </div>
-          <!--.space-container closing tag-->
+          <!--.profile-container closing tag-->
         </div>
-        <!--.container closing tag-->
-      </main>
+        <!--.space-container closing tag-->
+      </div>
+      <!--.container closing tag-->
+    </main>
 
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/Aishat02">Aris</a>❤️.
-      </footer>
-    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Aishat02">Aris</a>❤️.
+    </footer>
 
     <script src="src/script.js"></script>
   </body>
